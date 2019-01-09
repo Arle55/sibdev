@@ -1,0 +1,126 @@
+.page-main {
+    display: flex;
+}
+
+.page-main__menu {
+    width: 220px;
+    background-color: #f4f4f4;
+}
+
+.page-main__gallery {
+    width: 1110px;
+}
+
+.page-main__gallery-menu {
+    width: 1081px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: 1px solid #ededed;
+    display: flex;
+}
+
+.page-main__gallery-text p {
+    font-family: "Fira Sans Regular";
+    font-size: 12px;
+    color: #3f4044;
+    margin-top: 26px;
+    margin-left: 46px;
+}
+
+.page-main__gallery-change {
+    margin-left: auto;
+    display: flex;
+}
+
+.page-main__gallery-thumb {
+    margin-top: 22px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    :hover {
+        .cls-1 {
+            fill: #0a8df3;
+            fill-rule: evenodd;
+        }
+    }
+}
+
+.page-main__gallery-thumb svg {
+    .cls-1 {
+        fill: #676767;
+        fill-rule: evenodd;
+    }
+}
+
+.page-main__gallery-list {
+    margin-top: 22px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    :hover {
+        .cls-1 {
+            fill: #0a8df3;
+            fill-rule: evenodd;
+        }
+    }
+}
+
+.page-main__gallery-list svg {
+    .cls-1 {
+        fill: #676767;
+        fill-rule: evenodd;
+    }
+}
+
+.page-main__gallery-detail {
+    margin-top: 22px;
+    margin-bottom: 20px;
+
+    :hover {
+        .cls-1 {
+            fill: #0a8df3;
+            fill-rule: evenodd;
+        }
+    }
+}
+
+.page-main__gallery-detail svg {
+    .cls-1 {
+        fill: #676767;
+        fill-rule: evenodd;
+    }
+}
+
+.page-main__gallery-change a:focus {
+    .cls-1 {
+        fill: #0a8df3;
+        fill-rule: evenodd;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .page-main {
+        width: 768px;
+    }
+
+    .page-main__menu {
+        width: 100px;
+        background-color: #f4f4f4;
+    }
+
+    .page-main__gallery {
+        width: 668px;
+    }
+    
+    .page-main__gallery-menu {
+        width: 610px;
+    }
+
+    .page-main__gallery-change {
+        display: none;
+    }
+
+    .page-main__gallery-text {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,35 @@
+.sharing-popup {
+    position: fixed;
+    top: 30%;
+    left: 219px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid lightgray;
+    z-index: 25;
+    display: none;
+}
+
+.sharing-popup__link {
+    display: flex;
+    @include link;
+}
+
+.sharing-popup__link img {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.sharing-popup__text {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 0;
+    margin-bottom: 10px;
+    font-family: "Fira Sans Medium", sans-serif;
+    color: black;
+}
+
+.sharing-popup--active {
+    display: block;
+}

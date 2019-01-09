@@ -1,0 +1,74 @@
+.lables-menu__list {
+    @include list;
+    margin-bottom: 114px;
+}
+
+.lables-menu__list-link {
+    @include link;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.lables-menu__text {
+    font-family: "Fira Sans Bold";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #c1c1c1;
+    margin-left: 19px;
+    margin-top: 0;
+    margin-bottom: 23px;
+    padding: 0;
+    letter-spacing: 0.03em;
+}
+.lables-menu__list-item {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.lables-menu__list-item:nth-child(1) svg {
+    margin-right: 18px;
+    .cls-1 {
+        fill: #fe5151;
+        fill-rule: evenodd;
+    }
+}
+
+.lables-menu__list-item:nth-child(2) svg {
+    margin-right: 17px;
+    .cls-1 {
+        fill: rgb(53, 183, 71);
+        fill-rule: evenodd;
+    }
+}
+
+.lables-menu__list-item:nth-child(3) svg {
+    margin-right: 17px;
+    .cls-1 {
+        fill: rgb(8, 139, 214);
+        fill-rule: evenodd;
+    }
+}
+
+.lables-menu__list-item:nth-child(4) svg {
+    margin-right: 17px;
+    .cls-1 {
+        fill: rgb(186, 97, 242);
+        fill-rule: evenodd;
+    }
+}
+
+.lables-menu__list-item:nth-child(5) svg {
+    margin-right: 18px;
+    margin-bottom: 0;
+    .cls-1 {
+        fill: rgb(233, 211, 60);
+        fill-rule: evenodd;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .lables-menu {
+        display: none;
+    }
+}

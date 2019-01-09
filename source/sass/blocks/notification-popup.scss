@@ -1,0 +1,36 @@
+.notification-popup {
+    width: 200px;
+    height: auto;
+    border: 1px solid darkgray;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 80px;
+    left: -121px;
+    display: none;
+}
+
+.notification-popup__text {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid darkgray;
+}
+
+.notification-popup p:last-child {
+    border-bottom: none;
+}
+
+.notification-popup--active {
+    display: block;
+}
+
+@media screen and (max-width: 769px) {
+    .notification-popup {
+        top: 61px;
+    }
+}

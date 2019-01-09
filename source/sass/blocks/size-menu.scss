@@ -1,0 +1,27 @@
+.size-menu {
+    border-radius: 0 0 0 10px;
+}
+
+.size-menu__text {
+    font-family: "Fira Sans SemiBold";
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 41px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.size-menu__container {
+    width: 160px;
+    height: 8px;
+    margin-left: 30px;
+    margin-bottom: 42px;
+    background: linear-gradient(to right, #007be8 95px, #d5d5d5 65px);
+}
+
+@media screen and (max-width: 769px) {
+    .size-menu {
+        display: none;
+    }  
+}

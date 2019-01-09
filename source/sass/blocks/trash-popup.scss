@@ -1,0 +1,43 @@
+.trash-popup {
+    position: fixed;
+    top: 44%;
+    left: 36%;
+
+    width: 300px;
+    background-color: white;
+    transition: all 0.3s;
+    border: 1px solid lightgray;
+    display: none;
+    z-index: 25;
+}
+
+.trash-popup p {
+    margin-left: 30px;
+}
+
+.trash-popup__text {
+    font-size: 18px;
+    color: black;
+    margin-left: 30px;
+}
+
+.popup--active {
+    display: block;
+}
+
+
+@media screen and (max-width: 769px) {
+    .trash-popup {
+        top: 25%;
+        left: 36%;
+        width: 240px;
+    }
+
+    .trash-popup p {
+        font-size: 14px;
+    }
+
+    .trash-popup__text {
+        font-size: 14px;
+    }
+}

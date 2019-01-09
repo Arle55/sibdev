@@ -1,3 +1,14 @@
-body {
-    background-color: whitesmoke;
-}
+@import "includes/normalize.scss";
+@import "includes/common.scss";
+@import "includes/mixin.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/dropbox-menu.scss";
+@import "blocks/lables-menu.scss";
+@import "blocks/gallery-menu.scss";
+@import "blocks/size-menu.scss";
+@import "blocks/gallery.scss";
+@import "blocks/notification-popup.scss";
+@import "blocks/trash-popup.scss";
+@import "blocks/sharing-popup.scss";

@@ -3,6 +3,451 @@ html(lang="ru")
   head
     meta(charset=utf-8)
     title SibDev Test
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="css/style.css")
-  body
-    p Шо происходит
+body
+    header.page-header
+      .page-header__logo
+        a.page-header__logo-link
+          img.page-header__logo-image(src="img/dropbox-logo.svg", alt="Logo")
+
+      .page-header__search
+        input.page-header__input-search(type="search" name="search" placeholder="Type To Search...")
+
+      .page-header__upgrade
+        img.page-header__upgrade-image(src="img/upgradebox.svg", alt="Upgrade-box")
+        .page-header__upgrade-container
+          a.page-header__upgrade-link(href="#")
+            h1.page-header__upgrade-title Upgrade account
+            p.page-header__upgrade-text Pay 10$, Yearly
+
+      .page-header__user
+        img.page-header__user-image(src="img/ava.png", alt="User avatar")
+        .page-header__user-container
+          a.page-header__user-link(href="#")
+            h1.page-header__user-title Tim Van Damme
+            p.page-header__user-text Normal user
+
+      .page-header__setting
+        a.page-header__setting-link(href="#")
+          img.page-header__setting-image(src="img/setting-icon.svg", alt="Setting")
+
+      .page-header__notification 
+        a.page-header__notification-link(href="#")
+          svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="24" viewBox="0 0 21 24")
+            image(class="notification-icon" id="Notifaction_Icon" data-name="Notifaction Icon" width="21" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEU/QERnZ2c/QEQ/QEQ/QEQ/QEQ/QEQ/QEQ/QEQ/QEQ/QERnZ2dHSEtnZ2c/QERnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2c/QERnZ2dnZ2dAQUU/QEQ/QERnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2c/QEQ2SVwUaLMDeN81SV0Ed94Ae+hAQUUDeOBnZ2dISUxWVlg1SV5mZmZGR0pjY2NHR0tHSEtBQkYAAACTohMdAAAAMHRSTlMAAAZux/Mbz9AHbU765PhB0Vf8EO9k0Zis+8tvtMPbB/sISwG7Dadl5XyZRkhMeulTNrgrAAAAAWJLR0RDZ9ANYgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IMERMRDhAM3uwAAADgSURBVCjPZdDpWoJAFIDhQUBMSy2X1NxZUlM7DmicwFzu/6KcxYEJv5/vM9sZQvJKpmXbllkiemUHRE5ZX+nAjoYh3UHliRiqKkT7A2sfQTXT2jPQg4iClenLD4RSY6jftdFETW2pr2+Iv8UTWm1ETCCVt6VgCu0wxOMfRDSOaQRd+bJ3rng6yykqbAquPaF4TC7X/uCDT8x1iFlDOSjXUa4jI9NxrmPxUq6Taa7TmdI5as3v6nq6eq5QP8B/BT7TzwUWWnQMslw9tDTU/355rLX6bKUbvndTVHfb/t66Sm99Gzn7wlB7rgAAAABJRU5ErkJggg==")
+        .notification-popup 
+          p.notification-popup__text Hi! My name is Christina and I want to work with you so much! You can call me: +7-913-175-14-75
+    main.page-main
+      .page-main__menu
+        .main-menu
+          p.main-menu__text Main
+          ul.main-menu__list
+            li.main-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 16")
+                image(id="File_Icon" data-name="File Icon" width="12" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAMAAAAVv241AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEX////XmlnXmln////////////////////68+v////////XmlnXmlnXmlnXmln///8AAAD6K8pbAAAADnRSTlMASeaBhYf8irf+jedK5OkpRuUAAAABYktHRBCVsg0sAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhc4N5tJfQAAADtJREFUCNetyTcSACAMA0GTs/X/3zImdlRcpR2R0iwZkuZmWAEvwF14IBzEBOSN0RsYfXn03YVq2bvVDqMtCZaywx0PAAAAAElFTkSuQmCC")
+              a.main-menu__list-link(href="#") Files
+            li.main-menu__list-item 
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16")
+                image(id="Photo_Icon" data-name="Photo Icon" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAZlBMVEU1mNs1mNsnrmAnrmAnrmAnrmA1mNuetGn1ywr6zAX/zQD2ywkzpcEzpr0wvowvw4I1mdk0osYysaYuy3Eyrq4xtpwvx3k1m9Q1mtYuyHYxtZ8yrLIuynM0oMovwIcwvJAnrmAAAAA19nqEAAAABnRSTlNJ5ubnSuQTLTdlAAAAAWJLR0QhxGwNFgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IMEBYXKsQiODUAAABhSURBVBjTjcpHEoAgEERRTGBEpc35/qcUVGrElX8xVf1qGPP4K4+524g+IhYkBpI0dkFk+iMvCK5kWRHUiudAQ9BCSaDrLQwjriYL872xrA9sD2A3cHz6Ab67AxYG7x2FJ7TXD/8Dv105AAAAAElFTkSuQmCC")
+              a.main-menu__list-link(href="#") Photos
+            li.main-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="18" viewBox="0 0 19 18")
+                image(id="Share_Icon" data-name="Share Icon" width="19" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAASCAMAAACO0hVbAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACeVBMVEXAQEfBQkfKqn21k3SqkXa3lXTGn3a2on/FnnbAQUfTmm7XoHHaoG/cn27Xl2nigFTiiFrih1jgh1jhgVTMZkvQbE/QbU/NZU3KXUrLYEzIWEjCREjBQ0fBREi/P0e+OUa+O0a+PEa7MkTAQUe/PUa7MkS5LkO5LkO/PUa5LUO9N0W9N0W/PUbAQUe5LUO+Oka6MES5LUS6L0RNUmm6L0S6LkRLT2itmXtUVmq6LkS6LkR9d3OHfnW8NUVaW2tjYWy8NUXAP0ekuZestpHAP0e7NEXyx4Pzwn/BQkfrkF3ojFvAQUfWf0/TdU3BQUe7M0W9N0W8NEXBQUe9NkXIV0vOaUzPbEy7MkXLYE3ZiVDkplbqtV/tuGG8M0XVfVDmr1fyvmj/xnP/zHj/zny6L0TUek/ptlz5wHH/1YPd2Zuz4K+o5rfMYk3lsFj5wnL/2Iel269a6NVLx8NIs7W/PEbdklH0vmn/1oSk3LFJ3dRMf4xCRGI+O13JW0vlqVf/xXLY2Z1V6NhOfos1HEo+PF5BRWRU6NjY2Z7PbE3st2D/zXqk5LhIu7s/OVw/QGFBSGY4QGRAR2ZAQGHRck3xu2T/0YGT68RHnqU7MFdDSWY+RWVCSGbRcEzvumP/0H+Z6b9HqK09M1g0PGIxOmI+M1jvumLRcE3MZUzpsVz/ynW63axN185FT2olIFMoI1RETmpN18/ETEnhnlP8wW/32I9w5cw4rrc2rbj8wW7hn1PWflDruGDd1phl485r4src2JnruF+6METAQUjgnVPuuWb/3YjfnVO5LkTFT0rkqFbvvGbuu2XkqVe5LkO5LEPIV0zJWEy5LUQAAAD1mGdvAAAAU3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlcndDyceigr2YG+WCs3vne+O7qDtLvxmNLi9C7ii00ISy9tp4aHA5BjnM9rwSlQ1/wA+AAAAABYktHRNLg2K6wAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhcZe/JZIwAAAWFJREFUGNNjYAABZRVVNXU1VRVlBhhg1NAMDgkNCw0J1tRghApphUdERkXHREdFRoRrgQUZtWPj4hMSk5KTEhPi42K1QYI6Kalp6RmZWdlZmRnpaakpOgwMuno5uXn5BYVFxUWFBfl5uTl6ugz6JaVl5RWVVdU11VWVFeVlpSX6DAa1dfUNjU3NLa0tzU1t7fV1tQYMhh2dXd09vX39EyZO6u3p7uoMM2Qwmjxl6rTpM2bOMp44e8b0aVOnTDZhMJ0zd978BQsXmZlbLF6yYP68pcssGayWr1i5avWatdZMNuvWb1i1csVyKwbbjZs2b9m6zY6ZhdV++9YtO3ZudGBwTNm1O3nPXic2dg7nffuTD+w66MLA6Xro8JGjblzcPLx87kePHDvkysnA4HH8xMlTnvwCgkLCXqfPnDjrAQoE73PnfURExcQlJKV8L1z0hgSWn3+AtIysnLyColJgEJAPAE1RfWcTtrUbAAAAAElFTkSuQmCC")
+              a.main-menu__list-link(href="#").js-sharing Sharing
+              .sharing-popup
+                a.sharing-popup__link(href="#")
+                  p.sharing-popup__text Share to Facebook
+                  img(src="https://img.icons8.com/color/48/000000/facebook.png")
+                a.sharing-popup__link(href="#")
+                  p.sharing-popup__text Share to Twitter
+                  img(src="https://img.icons8.com/color/50/000000/twitter.png")
+                a.sharing-popup__link(href="#")
+                  p.sharing-popup__text Share on Google+
+                  img(src="https://img.icons8.com/color/50/000000/google-plus.png")
+            li.main-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" width="14.562" height="13.59" viewBox="0 0 14.562 13.59")
+                path(id="Link_Icon" data-name="Link Icon" class="cls-1" d="M158.266,1246.51l-1.865-1.76a2.226,2.226,0,0,0-2.992-.01l-2.069,1.93a1.892,1.892,0,0,0-.008,2.8l1.182-1.08a0.994,0.994,0,0,1,.32-1.02l1.316-1.22a1.1,1.1,0,0,1,1.5,0l1.12,1.06a0.946,0.946,0,0,1,0,1.4l-1.317,1.23a1.264,1.264,0,0,1-1.09.31l-1.158,1.08a2.205,2.205,0,0,0,2.992.01l2.066-1.92A1.9,1.9,0,0,0,158.266,1246.51Zm-7.575,7.05a1.1,1.1,0,0,1-.343,1.04l-1.23,1.15a1.138,1.138,0,0,1-1.523,0l-1.142-1.08a0.969,0.969,0,0,1,0-1.43l1.231-1.14a1.184,1.184,0,0,1,1.106-.31l1.186-1.12a2.267,2.267,0,0,0-3.048-.01l-2,1.86a1.936,1.936,0,0,0-.009,2.86l1.9,1.8a2.256,2.256,0,0,0,3.048,0l2-1.86a1.926,1.926,0,0,0,.009-2.85Zm-1.3-.51a0.745,0.745,0,0,0,1.021.01l3.408-3.24a0.672,0.672,0,0,0,0-.98,0.754,0.754,0,0,0-1.02,0l-3.409,3.24A0.662,0.662,0,0,0,149.4,1253.05Z" transform="translate(-144.313 -1244.19)")
+              a.main-menu__list-link(href="#") Links
+            li.main-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16")
+                image(id="Calender_Icon" data-name="Calender Icon" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAP1BMVEXnd3a7u7vnd3bnd3bnd3bnd3bnd3bnd3bnd3a7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7vnd3a7u7sAAAASaRzJAAAAEnRSTlMAAAaR7e6QD4g88O07kIkGke7CtP2DAAAAAWJLR0QUkt/JNQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IMEBYWKDM3aFgAAABTSURBVBjTpYtLDoAgEEMroAj4gen97+osUETjypdJ075kYKwTQBTN0RpMWr2XM2c46XCQB29BBlwEUsVwo4oY632Kvy+Joe2FCSs7Nuy5tFnyfgDsNQreL+HbrAAAAABJRU5ErkJggg==")
+              a.main-menu__list-link(href="#") Events
+
+        .dropbox-menu
+          p.dropbox-menu__text Also from Dropbox
+          ul.dropbox-menu__list
+            li.dropbox-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16")
+                image(id="Carousel_Icon" data-name="Carousel Icon" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAwFBMVEUtOUULrP8ozmf2W08tOUUtOUUtOUUtOUULrP8LrP8tOUUtOUUtOUULrP8LrP8LrP8tOUULrP8LrP8ozmcozmctOUUtOUUtOUULrP8LrP8ozmcozmctOUUtOUUtOUUtOUUozmcozmf2W0/2W08tOUUtOUUozmf2W0/2W0/2W0/2W08tOUX2W0/2W0/2W08tOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUtOUUAAAACt6sLAAAAPnRSTlMAAAAAKo7X+FsVBpT9D+kNu2mbOpqVtHyFNeM7K/zlNwPGDBSPOAI2mupatYRrD/l7evOz1DaQLL2YCdj69B5gZPQAAAABYktHRD8+YzB1AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhgR8rHN3gAAAKlJREFUGNNNj2cbgjAMhNNWUREnbhnuPUAQnPf/f5YtIA/3KfemTS5EUqWyViFWrTHOhbR63QDAGs0WT4DehhLrdLnZU6AvnTEYstHYnEyFIMsGHJeIsdncFIslrWR/TQrwzXa3P5AGHCkF/HS+CLoCHhVVBD5wU18GfxAAYTLUTf1dBowoztZK7wB2nAULPD9QB/Qpj57ooVN+nHr3fGXTrej9+YZRrOofp7wZ0ssQMFAAAAAASUVORK5CYII=")
+              a.dropbox-menu__list-link(href="#") Carousel
+            li.dropbox-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="16" viewBox="0 0 18 16")
+                defs
+                  filter(id="filter" x="145" y="1429" width="18" height="16" filterUnits="userSpaceOnUse")
+                    feImage(preserveAspectRatio="none" x="145" y="1429" width="18" height="16" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTgiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxOCAxNiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI5IiB5MT0iMTYiIHgyPSI5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzNlYjRkYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzOWM2ZjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE2Ii8+Cjwvc3ZnPgo=")
+                    feComposite(result="composite" operator="in" in2="SourceGraphic")
+                    feBlend(result="blend" in2="SourceGraphic")
+                path(id="Mailbox_Icon" data-name="Mailbox Icon" class="cls-1" d="M148.663,1429h10.674L163,1440.24V1445H145v-4.76Zm1.465,2.59,3.872,3.25,3.872-3.25,2.616,8.87H147.512Z" transform="translate(-145 -1429)")
+              a.dropbox-menu__list-link(href="#") Mailbox
+
+        .lables-menu
+          p.lables-menu__text Lables
+          ul.lables-menu__list
+            li.lables-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13")
+                path(id="Circle" class="cls-1" d="M151.5,1527a6.5,6.5,0,1,1-6.5,6.5A6.5,6.5,0,0,1,151.5,1527Zm0,1.53a4.97,4.97,0,1,1-4.971,4.97A4.967,4.967,0,0,1,151.5,1528.53ZM149,1532v-1h5v1h-5m0,2v-1h3v1h-3m0,2v-1h5v1h-5" transform="translate(-145 -1527)")
+              a.lables-menu__list-link(href="#") Design
+            li.lables-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13")
+                path(id="Circle" class="cls-1" d="M151.5,1527a6.5,6.5,0,1,1-6.5,6.5A6.5,6.5,0,0,1,151.5,1527Zm0,1.53a4.97,4.97,0,1,1-4.971,4.97A4.967,4.967,0,0,1,151.5,1528.53ZM149,1532v-1h5v1h-5m0,2v-1h3v1h-3m0,2v-1h5v1h-5" transform="translate(-145 -1527)")
+              a.lables-menu__list-link(href="#") Web Elements
+            li.lables-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13")
+                path(id="Circle" class="cls-1" d="M151.5,1527a6.5,6.5,0,1,1-6.5,6.5A6.5,6.5,0,0,1,151.5,1527Zm0,1.53a4.97,4.97,0,1,1-4.971,4.97A4.967,4.967,0,0,1,151.5,1528.53ZM149,1532v-1h5v1h-5m0,2v-1h3v1h-3m0,2v-1h5v1h-5" transform="translate(-145 -1527)")
+              a.lables-menu__list-link(href="#") Mobile
+            li.lables-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13")
+                path(id="Circle" class="cls-1" d="M151.5,1527a6.5,6.5,0,1,1-6.5,6.5A6.5,6.5,0,0,1,151.5,1527Zm0,1.53a4.97,4.97,0,1,1-4.971,4.97A4.967,4.967,0,0,1,151.5,1528.53ZM149,1532v-1h5v1h-5m0,2v-1h3v1h-3m0,2v-1h5v1h-5" transform="translate(-145 -1527)")
+              a.lables-menu__list-link(href="#") Application
+            li.lables-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13")
+                path(id="Circle" class="cls-1" d="M151.5,1527a6.5,6.5,0,1,1-6.5,6.5A6.5,6.5,0,0,1,151.5,1527Zm0,1.53a4.97,4.97,0,1,1-4.971,4.97A4.967,4.967,0,0,1,151.5,1528.53ZM149,1532v-1h5v1h-5m0,2v-1h3v1h-3m0,2v-1h5v1h-5" transform="translate(-145 -1527)")
+              a.lables-menu__list-link(href="#") UI/UX
+        .size-menu
+          p.size-menu__text 1.2 gb of 2gb in used
+          .size-menu__container
+
+      .page-main__gallery
+        .page-main__gallery-menu
+          ul.gallery-menu__list
+            li.gallery-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="16" viewBox="0 0 22 16")
+                image(id="Upload_Icon" data-name="Upload Icon" width="22" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAMAAAAlM38UAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAaVBMVEWJyP////+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP+JyP/E4/////8AAACEF5xYAAAAH3RSTlMAAAmB3PkICsWCfdn70PjUViWt8eftJ+/ukQaIKInyn4sX9AAAAAFiS0dEIl1lXKwAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiDBAWEjfaU6CpAAAAe0lEQVQY02XO0RaCIAyA4YmQVpYGkaYV+P4vqUM2A/8r9h3OACAkSqlkeYK0qnZYLVI+u61LyjLyNWUVubnd2+54O7T5Q5un/ecW9dW7LIWsefQ+Hob3CIZ1nsndxLzq7paWBGW38KEnUWnJd/2K/mWMT3LIcKhALmhaACibGdn3qoFcAAAAAElFTkSuQmCC")
+              a.gallery-menu__list-link(href="#") 
+                p Upload
+            li.gallery-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="14" viewBox="0 0 17 14")
+                image(id="Folder_Icon" data-name="Folder Icon" width="17" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAMAAAD+MweGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEX7lQD7lQD7lQD7lQD7lQD7lQD7lQD7lQD7lQD7lQD7lQD7lQD6rAT6vQf6vQf6vQf7lQD6vQcAAABdpdCeAAAAEHRSTlMAU+30dun9q6qYH8fG/KD9Ox5+lwAAAAFiS0dEEnu8bAAAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiDBAWExf4JrEgAAAANUlEQVQI12NgZBIAAmYWBjhgFQADNnYOMODkYhBAA9wMPOiAQRAdDLAIL5oALwMfP4oAPx8ATgsOD8Xs6hsAAAAASUVORK5CYII=")
+              a.gallery-menu__list-link(href="#") 
+                p New Folder
+            li.gallery-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="17" viewBox="0 0 19 17")
+                image(id="Share_Folder_Icon" data-name="Share Folder Icon" width="19" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAARCAMAAAAIRmf1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEX7lQD7mgH6vQf7lQD7lQD7lQD7lQD7lQD7lQD7lQD7lQD7lQD7lQD7mgH6vQf7ogL7lQD7lQD7ogL7oQL7ogL6vQf6vQf6vQf6vQf6vQf6vQf6vQf6vQf7lQD6vQf6uAb6rAT6qgT6qwT6sgX6uwf7mQH6tgb6uQb7qAMAAACFLqryAAAAHXRSTlMAAABg8uI87MzFX+/tGi1lNpnLwLzsMXSP/grSrI6gFlAAAAABYktHRCnKt4UkAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhMpOUesiwAAAG9JREFUGNOdzcsagiAUhVEgtfKC3b0eFEjr/Z+wAzkQceDnP1yDvckhACyMyBSllFgCOJ5s59hY4pZmaGIRZ8xY10splZ4MN4V4D/9JpU35xdgIble0z3fe7f7wPrDN9lyxV1F6xhjfaRVa3bjW/gBCRR/5pOEw1AAAAABJRU5ErkJggg==")
+              a.gallery-menu__list-link(href="#") 
+                p Share a Folder
+            li.gallery-menu__list-item
+              svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="17" viewBox="0 0 13 17")
+                image(id="Trash_Icon" data-name="Trash Icon" width="13" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAARBAMAAAD00TuvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJFBMVEXyXmG7u7vyXmHyXmHyXmG7u7u7u7u7u7u7u7vyXmG7u7sAAADdR0w7AAAACXRSTlMAAPBJ5ubnSuRqkZGMAAAAAWJLR0QLH9fEwAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IMEBYUDUoF3p0AAAA8SURBVAjXY2BgmjlzEgMDg8lMIJhiwOAJomc6MICpmRMYuFaBAAOD1MJVQCRANVoUZOwyAQbxLCDdLgAAqHgzOM7baK4AAAAASUVORK5CYII=")
+              a.gallery-menu__list-link(href="#").js-trash
+                p Trash
+              .trash-popup
+                h2.trash-popup__text Trash is:
+                p My JS skill
+                p My ex-boyfriend
+                p My humor
+
+          .page-main__gallery-text
+            p You have #[span.js-counter 0] selected items
+          .page-main__gallery-change
+            a.page-main__gallery-thumb(href="#", data-view="thumb").js-link
+              svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16")
+                path(id="Thumb_View" data-name="Thumb View" class="cls-1" d="M1371,1084h-12a2.006,2.006,0,0,1-2-2v-12a2.006,2.006,0,0,1,2-2h12a2.006,2.006,0,0,1,2,2v12A2.006,2.006,0,0,1,1371,1084Zm0-13a1,1,0,0,0-1-1h-10a1,1,0,0,0-1,1v10a1,1,0,0,0,1,1h10a1,1,0,0,0,1-1v-10Zm-3,9h-1a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h1a1,1,0,0,1,1,1v1A1,1,0,0,1,1368,1080Zm0-5h-1a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h1a1,1,0,0,1,1,1v1A1,1,0,0,1,1368,1075Zm-5,5h-1a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h1a1,1,0,0,1,1,1v1A1,1,0,0,1,1363,1080Zm0-5h-1a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h1a1,1,0,0,1,1,1v1A1,1,0,0,1,1363,1075Z" transform="translate(-1357 -1068)")
+            a.page-main__gallery-list(href="#", data-view="list").js-link
+              svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16")
+                path(id="List_View" data-name="List View" class="cls-1" d="M1407,1084h-12a2.006,2.006,0,0,1-2-2v-12a2.006,2.006,0,0,1,2-2h12a2.006,2.006,0,0,1,2,2v12A2.006,2.006,0,0,1,1407,1084Zm0-13a1,1,0,0,0-1-1h-10a1,1,0,0,0-1,1v10a1,1,0,0,0,1,1h10a1,1,0,0,0,1-1v-10Zm-2.5,9h-7a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h7a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1404.5,1080Zm0-3h-7a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h7a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1404.5,1077Zm0-3h-7a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h7a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1404.5,1074Z" transform="translate(-1393 -1068)")
+            a.page-main__gallery-detail(href="#", data-view="detail").js-link
+              svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16")
+                path(id="Detail_View" data-name="Detail View" class="cls-1" d="M1443,1084h-12a2.006,2.006,0,0,1-2-2v-12a2.006,2.006,0,0,1,2-2h12a2.006,2.006,0,0,1,2,2v12A2.006,2.006,0,0,1,1443,1084Zm0-13a1,1,0,0,0-1-1h-10a1,1,0,0,0-1,1v10a1,1,0,0,0,1,1h10a1,1,0,0,0,1-1v-10Zm-2.5,9h-3a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h3a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1440.5,1080Zm0-3h-3a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h3a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1440.5,1077Zm0-3h-3a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h3a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1440.5,1074Zm-6,6h-1a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h1a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1434.5,1080Zm0-3h-1a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h1a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1434.5,1077Zm0-3h-1a0.5,0.5,0,0,1-.5-0.5v-1a0.5,0.5,0,0,1,.5-0.5h1a0.5,0.5,0,0,1,.5.5v1A0.5,0.5,0,0,1,1434.5,1074Z" transform="translate(-1429 -1068)")
+        .gallery.js-list
+          .gallery__item
+            img.gallery__img(src="img/1-img.jpg" alt="Dropbox logo")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper
+                h2.gallery__img-title dropbox logo.jpg
+                p.gallery__img-info Jul 22 , 110.2 KB
+                .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/2-img.jpg" alt="Contact")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper
+              h2.gallery__img-title contact.jpg
+              p.gallery__img-info Jun 14 , 245.35 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/3-img.jpg" alt="Olimp")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Olimp-006.psd
+              p.gallery__img-info Apr 11 , 7.2 MB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/4-img.jpg" alt="Sweet pixels icon")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Sweet pixels icon.jpg
+              p.gallery__img-info Mar 5 , 500.76 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/5-img.jpg" alt="boxing glove icon")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title boxing glove icon.jpg
+              p.gallery__img-info May 20 , 70 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/6-img.jpg" alt="Icon Set")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Icon Set.jpg
+              p.gallery__img-info Sep 26 , 222.02 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/7-img.jpg" alt="Instagram")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title instagram.jpg
+              p.gallery__img-info Aug 14 , 260 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/8-img.jpg" alt="Pin Art Dribbble")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Pin Art Dribbble.jpg
+              p.gallery__img-info Dec 13 , 450 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/9-img.jpg" alt="Iron-Man-Mask")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Iron-Man-Mask.jpg
+              p.gallery__img-info Feb 23 , 245.2 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/10-img.jpg" alt="Warehouse desing")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Warehouse desing.png
+              p.gallery__img-info Oct 05 , 1.2 MB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/11-img.jpg" alt="Magic Bacon Ride")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Magic Bacon Ride.jpg
+              p.gallery__img-info Sep 06 , 150 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/12-img.jpg" alt="Mobile Portfolio")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Mobile Portfolio.jpg
+              p.gallery__img-info Dec 14 , 500.65 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/13-img.jpg" alt="Facebook button")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Facebook button.jpg
+              p.gallery__img-info Dec 19 , 245.2 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/14-img.jpg" alt="Web Design")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title Web Design.jpg
+              p.gallery__img-info Jun 23 , 982.2 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+          .gallery__item
+            img.gallery__img(src="img/15-img.jpg" alt="dribbble fun")
+            svg.gallery__check(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22")
+              image(id="Check_Icon" data-name="Check Icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEWg1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gig1Gi23ovo9Nqq2Xm03Yn7/fio2HWw24H3+/P///7C456t2nz1+u7////Q6rXV7Lyz3Iby+erf8Myg1Gnx+en7/fm84ZSo2HTw+Ofr9uCk1m7J5qn9/vvt9+P1+u/g8c7f8c3z+uy535AAAABY8nl3AAAAIHRSTlMAEWqz4fnz1wh573oJINMc48p4EvBrsuLy2dIk5eQh+mP07KcAAAABYktHRENn0A1iAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gwQFhISkVd07gAAAM5JREFUGNNtkekWwTAQhYe0KLpYoigaaif2fef9H4qkCW31/pk53zm5k5kLwJVIIkVNpVEyAT9ltCwRyubykuoGCcjQfWpaJCTL5A4FElGB+RTJnzSAUvkfl0uAQ6Dd8VjBUAnSbq/XZxWBHaCD4WjMGxvUH51M6czvVKjyOl8Q4i3pai1xjdfNdrc/0ONJvLPFyDO9XOnNk3ZIfHB9p3Tb/U7Bcp3T4/kKrgNa7PKQr0epwU/uNMK06fgHb8XG8PHJxYXGIsZIcV0FYRHxG21bMP8f27WoAAAAAElFTkSuQmCC")
+            .gallery__item-wrapper  
+              h2.gallery__img-title dribbble fun.jpg
+              p.gallery__img-info Oct 05 , 50.2 KB
+              .gallery__more
+                  img(src="img/opt-icon.svg")
+                  ul.gallery__more-list
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Share
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Download as .zip
+                    li.gallery__more-item
+                      a.gallery__more-link(href="#") 
+                        p Delete
+    script
+      include js/check.js
+      include js/klik.js
+      include js/change.js
+      include js/trash-popup.js
+      include js/sharing-popup.js

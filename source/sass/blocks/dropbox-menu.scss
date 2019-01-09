@@ -1,0 +1,55 @@
+.dropbox-menu__list {
+    @include list;
+    margin-bottom: 38px;
+}
+
+.dropbox-menu__list-link {
+    @include link;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.dropbox-menu__text {
+    font-family: "Fira Sans Bold";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #c1c1c1;
+    margin-left: 19px;
+    margin-bottom: 18px;
+    letter-spacing: 0.03em;
+}
+
+.dropbox-menu__list-item:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.dropbox-menu__list-item:nth-child(1) svg {
+    margin-left: 30px;
+    margin-right: 16px;
+}
+
+.dropbox-menu__list-item:nth-child(2) svg {
+    margin-left: 30px;
+    margin-right: 13px;
+    .cls-1 {
+        fill: #39c6f4;
+        fill-rule: evenodd;
+        filter: url(#filter);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .dropbox-menu__list-item svg {
+        display: none;
+    }
+
+    .dropbox-menu__list-link {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    .dropbox-menu__list-item:nth-child(1) {
+        margin-bottom: 20px;
+    }
+}
